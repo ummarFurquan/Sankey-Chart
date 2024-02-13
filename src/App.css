@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* Default styles */
+/* Add your default styles here */
+
+/* Media query for screens smaller than 768px (mobile devices) */
+@media only screen and (max-width: 767px) {
+  .sankey-charts {
+    width: 100%; /* Make the chart container full width */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+}
+
+/* Media query for screens larger than or equal to 768px (tablets and desktops) */
+@media only screen and (min-width: 768px) {
+  .sankey-charts {
+    max-width: 850px; /* Limit the maximum width of the chart container */
+    margin: 0 auto; /* Center the chart container horizontally */
+  }
+}
